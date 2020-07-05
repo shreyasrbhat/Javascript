@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO APP</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <script>
+
+    </script>
+    <script src="scripts/moment.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="contain">
+            <h1 class="header__title">To-Do APP</h1>
+            <h1 class="header__subtitle">What do you need to do?</h1>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input type='text' class='input' id="filter-task" , placeholder="Todo filter">
+            <label class="checkbox"> 
+                <input type="checkbox" id="hideCompleted"> Hide completed tasks
+            </label>
+    &nbsp;
+    <select id='sortby', class='sortby'>
+        <option id="created" , value='created'>Last created</option>
+        <option id="updated" , value='updated'>Last updated</option>
+    </select>
+    <label id='sortby'>sortby</label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id='notes'></div>
+        <form id="add-task">
+            <input type="text" class='input' placeholder="Add a task" id="inputTask">
+            <button type="submit" class="button">Add Todo</button>
+        </form>
+    </div>
+
+
+
+    <script src='scripts/uuidv4.js'></script>
+    <script src="scripts/todo-functions.js"></script>
+    <script src="scripts/todo-script.js"></script>
+    <script src="scripts/moment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    build: .
+    image: node_js
+    environment:
+      - NODE_ENV=development
+    working_dir: /home/node/app
+    volumes:
+      - ./app/:/home/node/app
+    ports:
+      - "8080:8080"
+    command: tail -f /dev/null #live-server todo-app  #
+    
+    #command: "node && npm install && npm start"
